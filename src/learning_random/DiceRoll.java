@@ -43,24 +43,25 @@ public class DiceRoll{
 		rollButton.addActionListener((e)->{
 			
 			//1. Make randomChoice equal to a random number between 1 and 6
-			int randomChoice = 0;
+		Random Dan=new Random();
+			int randomChoice = Dan.nextInt((6-1)+1);
 			
 			
 			//2. Fix the code below so that it displays the correct image
-			if(randomChoice == 0){
+			if(randomChoice == 1){
 				label.setIcon(new ImageIcon(oneImg));
-			}else if(randomChoice == 0){
+			}else if(randomChoice == 2){
 				label.setIcon(new ImageIcon(twoImg));
-			}else if(randomChoice == 0){
+			}else if(randomChoice == 3){
 				label.setIcon(new ImageIcon(threeImg));
 			}
-			else if(randomChoice == 0){
+			else if(randomChoice == 4){
 				label.setIcon(new ImageIcon(fourImg));
 			}
-			else if(randomChoice == 0){
+			else if(randomChoice == 5){
 				label.setIcon(new ImageIcon(fiveImg));
 			}
-			else{
+			else if(randomChoice == 6){
 				label.setIcon(new ImageIcon(sixImg));
 			}
 		});

@@ -79,7 +79,8 @@ public class RockPaperScissors extends JPanel implements ActionListener{
         int selection = 0;
         //1. Run the program multiple times. Does the computer always choose the same thing?
         //2. Make oppenentSelection a random number between 0 and 2;
-        int opponentSelection = 0;
+        Random Dan= new Random();
+        int opponentSelection = Dan.nextInt(2);
         
         //3. Run the program again. Is the result better?
         
